@@ -5,7 +5,7 @@ public class Moca extends Complemento{
         this.bebida = bebida;
     }
 
-    public String getDescricion(){
+    public String getDescripcion(){
         return bebida.getDescripcion() + ", Moca";
     }
 
