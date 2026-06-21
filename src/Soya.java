@@ -5,11 +5,21 @@ public class Soya extends Complemento{
         this.bebida = bebida;
     }
 
-    public String getDescripcion(){
+    public String getTamano() {
+        return bebida.getTamano();
+    }
+
+    public String getDescripcion() {
         return bebida.getDescripcion() + ", Soya";
     }
 
     public double costo() {
-        return .15 + bebida.costo();
+        double precioComplemento = 0;
+        switch (bebida.getTamano()) {
+            case "M": precioComplemento = 0.20; break;
+            case "G": precioComplemento = 0.25; break;
+            case "N": default: precioComplemento = 0.15; break;
+        }
+        return precioComplemento + bebida.costo();
     }
 }
