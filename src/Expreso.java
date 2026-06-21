@@ -5,6 +5,10 @@ public class Expreso extends Cafe{
     }
 
     public double costo(){
-        return 1.99;
+        switch (getTamano()) {
+            case "M": return 2.09;
+            case "G": return 2.15;
+            case "N": default: return 1.99;
+        }
     }
 }

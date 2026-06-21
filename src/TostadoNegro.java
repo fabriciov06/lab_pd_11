@@ -5,6 +5,10 @@ public class TostadoNegro extends Cafe{
     }
 
     public double costo(){
-        return 0.99;
+        switch (getTamano()) {
+            case "M": return 1.09;
+            case "G": return 1.19;
+            case "N": default: return 0.99;
+        }
     }
 }

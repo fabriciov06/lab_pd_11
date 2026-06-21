@@ -5,6 +5,10 @@ public class Descafeinado extends Cafe{
     }
 
     public double costo(){
-        return 1.05;
+        switch (getTamano()) {
+            case "M": return 1.15;
+            case "G": return 1.25;
+            case "N": default: return 1.05;
+        }
     }
 }
