@@ -1,4 +1,6 @@
-public static void main(String[] args) {
+public class Main{
+    public static void main(String[] args) {
+
     System.out.println("BIENVENIDO");
     System.out.println();
 
@@ -37,4 +39,5 @@ public static void main(String[] args) {
     bebida4 = new Soya(bebida4);
     bebida4 = new Soya(bebida4);
     System.out.println(bebida4.getDescripcion() + "\nTotal: $" + bebida4.costo());
+}
 }
